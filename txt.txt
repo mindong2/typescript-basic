@@ -1,0 +1,2 @@
+설치 -> npm install -g typescript
+컴파일 -> tsc -w 
