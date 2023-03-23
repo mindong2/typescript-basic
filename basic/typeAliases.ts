@@ -235,3 +235,28 @@ const FnAlias2: FnAliasType2 = (a, b, c) => {
 // }
 
 FnAlias2("010-1111-2222", cutZero, removeDash);
+
+// html에서 dom에 접근할때는 그 태그가 있는지, null인지 모르므로 narrowing이 필요합니다.
+const num = document.querySelector('.num');
+const btn = document.querySelector('.btn');
+/* 
+가장 추천하는 방법
+1. if(num instanceof HTMLElement) {
+   num.innerHTML = '2';
+}
+*/
+
+/*
+  ?.는 옵셔널체이닝 -> 있으면 해당 출력, 없으면 undefined 출력
+  2. if(num?.innerHTML !== undefined){
+    num.innerHTML = '2';
+  }
+*/
+
+
+btn?.addEventListener('click', () => {
+  if(num instanceof HTMLElement) {
+    let newNum : (string | number) = Number(num.innerText) + 1;
+    num.innerHTML = newNum.toString()
+  }
+})
