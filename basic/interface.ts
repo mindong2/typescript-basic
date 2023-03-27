@@ -1,12 +1,12 @@
 // object에서 interface도 가능
 
 // type Square = {color : string, width : number}
-interface Square {
+interface Square2 {
   color: string;
   width: number;
 }
 
-let square: Square = { color: "red", width: 100 };
+let square: Square2 = { color: "red", width: 100 };
 
 // & type intersection -> interface도 가능 (합치는게 아니고 둘 다 만족해야 한다는 의미)
 
