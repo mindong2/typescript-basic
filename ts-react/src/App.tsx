@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-let box :JSX.Element = <div></div>; //JSX 타입지정
+let box :JSX.Element = <div>안녕하세요</div>; //JSX 타입지정
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <h4 onClick={() => setUser('dongmin')}>안녕하십니까 {user}</h4>      
+      {box}
       <Profile name="철수" />
     </div>
   );
