@@ -52,7 +52,7 @@ let unknown : unknown = 'unknown';
 let user : string = 'kim';
 let age : (undefined | number) = undefined;
 let married : boolean = false; 
-let kim : (string | undefined | number | boolean)[] = [user, age, married];
+let kim2 : (string | undefined | number | boolean)[] = [user, age, married];
 
 let school : ({
   score : (number | boolean)[],

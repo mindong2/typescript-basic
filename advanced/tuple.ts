@@ -18,7 +18,7 @@ type Num1 = [number, number?, number?]; // ?옵션은 끝부터. 중간것만 �
 
 let arr = [1,2];
 let arr2 : [number,number,...number[]] = [3,4,5,...arr];//[3,4,5,1,2];
-let newArr : [number,number,...number[]] = [1,2,3,4,5,6,7,8,9];
+let newArr2 : [number,number,...number[]] = [1,2,3,4,5,6,7,8,9];
 
 /*
     practice1

@@ -1,10 +1,21 @@
+/*
+  export is not defined 오류 해결법
+  브라우저는 commonjs 모듈을 지원하지 않기 때문에,
+  컴파일 후 모듈을 번들링 하려면 일부 도구(웹팩, 롤업, 브라우저화)를 사용해야 한다.
+
+  tsconfig.json 에서 모듈 옵션 을 제거하거나es2015 또는 esnext 로 설정하면 import 및 export 문은 원본 파일에 있는 그대로 유지된다.
+
+  혹은 module을 "ES2015" , script에 type="module" 추가
+*/
+
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "ES2015",
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noEmit": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "allowJs" : true
   }
 }
