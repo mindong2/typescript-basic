@@ -15,7 +15,7 @@ let obj :StringOnly = {
 
 let obj2 :StringOnly = {
     name : 'kim',
-    0 : 'kim',
+    0 : 'kim', //object에서는 숫자가 key값으로 들어와도 string으로 변환해준다.
     1 : 'good',
     2 : 'age'
 }
